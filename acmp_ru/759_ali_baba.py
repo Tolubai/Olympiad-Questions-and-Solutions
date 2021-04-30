@@ -6,7 +6,7 @@ file_out = open('output.txt', 'w')
 # # n – количество предметов в пещере
 # # m – максимальное количество предметов, которые Али-Баба может унести с собой
 
-# first way accepted from acmp.ru
+# first way accepted from acmp.ru ( because if there all prices is mines, Ali baba doesn't take any treasure)
 num = list(map(int, file_in.read().split()))
 
 n = num[0]
@@ -21,24 +21,24 @@ for i in range(m):
 file_out.write(str(total))
 
 
-# second way
-
-numbers = list(map(int, file_in.read().split()))
-n = numbers[0]
-numbers.remove(n)
-m = numbers[0]
-numbers.remove(m)
-
-numbers.sort()
-numbers.reverse()
-
-max_numbers = numbers[:m]
-total_price = 0
-
-for i in range(m):
-    total_price += max_numbers[i]
-
-file_out.write(str(total_price))
+# second way (Ali baba can take maximum useful treasure if there prices are mines)
+#
+# numbers = list(map(int, file_in.read().split()))
+# n = numbers[0]
+# numbers.remove(n)
+# m = numbers[0]
+# numbers.remove(m)
+#
+# numbers.sort()
+# numbers.reverse()
+#
+# max_numbers = numbers[:m]
+# total_price = 0
+#
+# for i in range(m):
+#     total_price += max_numbers[i]
+#
+# file_out.write(str(total_price))
 
 
 file_in.close()
