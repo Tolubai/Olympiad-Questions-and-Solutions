@@ -1,5 +1,7 @@
 # https://acmp.ru/index.asp?main=task&id_task=1
 
+# sum = a + b
+
 file_in = open('input.txt')
 file_out = open('output.txt', 'w')
 

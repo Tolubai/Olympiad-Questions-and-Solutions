@@ -1,5 +1,16 @@
 # https://acmp.ru/index.asp?main=task&id_task=554
 
+# n = 0 --> 1
+#               +1
+# n = 1 --> 2
+#               +2
+# n = 2 --> 4
+#               +3
+# n = 3 --> 7
+
+# sum of arithmetic numbers
+# 1 + 1 + 2 + 3 +..
+
 file_in = open('input.txt')
 file_out = open('output.txt', 'w')
 
